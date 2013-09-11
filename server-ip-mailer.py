@@ -88,18 +88,18 @@ def sendmail(smtp_setting, mail_setting, send_list):
     smtpserver.quit()
 
 if __name__ == '__main__':
-    # Mail server settings
+    # smtp server settings
     smtp_setting = {
         'smtp_server': 'smtp.gmail.com',
         'smtp_port': 587
         }
 
+    # Mail account settings
     mail_setting = {
         'mail_user': 'username@gmail.com',
         'mail_password': 'password'
         }
 
-    # Mail account settings
     send_to_list = [
         'username@gmail.com',
         'username2@gmail.com'
