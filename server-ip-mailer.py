@@ -72,10 +72,10 @@ def sendmail(smtp_setting, mail_setting, send_list):
     today = datetime.date.today()
     ipaddr = get_ipaddr()
     my_ip = 'Your ip is %s' % get_ipaddr()
-    hostname = "The host %s" % get_hostname()
+    hostname = "the host %s" % get_hostname()
     start('Send ip mail ( ' + ipaddr + ' )')
     msg = MIMEText(hostname + '\n' + my_ip)
-    msg['Subject'] = 'IP For' + hostname + 'on %s' % today.strftime('%b %d %Y')
+    msg['Subject'] = 'IP For ' + hostname + ' on %s' % today.strftime('%b %d %Y')
     msg['From'] = mail_setting['mail_user']
     for send_user in send_list:
         msg['To'] = send_user
