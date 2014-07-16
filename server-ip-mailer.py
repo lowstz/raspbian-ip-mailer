@@ -90,19 +90,19 @@ def sendmail(smtp_setting, mail_setting, send_list):
 if __name__ == '__main__':
     # smtp server settings
     smtp_setting = {
-        'smtp_server': 'smtp.gmail.com',
+        'smtp_server': 'smtp.mailgun.org',
         'smtp_port': 587
         }
 
     # Mail account settings
     mail_setting = {
-        'mail_user': 'username@gmail.com',
+        'mail_user': 'user',
         'mail_password': 'password'
         }
 
     send_to_list = [
-        'username@gmail.com',
-        'username2@gmail.com'
+        'username1@gmail.com',
+        'username2@gmail.com'        
         ]
 
     sendmail(smtp_setting, mail_setting, send_to_list)

@@ -14,7 +14,7 @@ MAILER=/usr/local/bin/server-ip-mailer.py
 case "$1" in
     start)
         log_action_msg "Sending ip mail ..."
-        $MAILER
+        $MAILER &
         ;;
     *)
         echo "Usage: $0 {start}"
